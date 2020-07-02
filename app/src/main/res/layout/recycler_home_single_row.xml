@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:id="@+id/cvRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+
+            android:padding="5dp"
+            android:id="@+id/imgRestaurant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/txtRestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@+id/imgRestaurant"
+            android:text="@string/restaurant_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/txtRestaurantPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/txtRestaurantName"
+            android:layout_toRightOf="@+id/imgRestaurant"
+            android:text="Rs. 299 / person"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/btnRestaurantFavourite"
+            android:src="@drawable/ic_favorite_border_black_30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#ffffff"
+            android:layout_margin="12dp"/>
+
+        <TextView
+            android:drawableLeft="@drawable/ic_star_yellow_24dp"
+            android:id="@+id/txtRestaurantRating"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFC107"
+            android:layout_below="@id/btnRestaurantFavourite"
+            android:layout_marginRight="5dp"
+            android:text="4.5"
+            android:textSize="24sp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

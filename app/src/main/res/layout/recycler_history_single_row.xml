@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvContentHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+
+            android:id="@+id/txtHistoryResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="4dp"
+            android:text="@string/restaurant_name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtHistoryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="4dp"
+            android:text="@string/dd_mm_yyyy"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_margin = "4dp"
+            android:id="@+id/txtTotalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHistoryDate"
+            android:layout_alignParentEnd="true"
+            android:text="@string/rs_total_cost" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerHistoryChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalCost"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
